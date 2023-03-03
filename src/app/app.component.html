@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="article">
+        <h1>Weather in {{ weatherCity }}:</h1>
+
+        <p>
+          <span class="text-bold">Temperature:</span> {{ weatherTemperature }}
+          <br />
+          <span class="text-bold">Humidity:</span> {{ weatherHumidity }}
+          <br />
+          <span class="text-bold">Wind:</span> {{ weatherWind }}
+          <br />
+          <span class="text-bold">Clouds:</span> {{ weatherClouds }}
+        </p>
+        <a href="{{ weatherLink }}" target="_blank">LINK</a>
+      </div>
+
+      <div class="article">
+        <h1>Newest Car: {{ carModel }}</h1>
+
+        <p>
+          <span class="text-bold">Manufacturer:</span> {{ carManufacturer }}
+          <br />
+          <span class="text-bold">Model:</span> {{ carModel }}
+          <br />
+          <span class="text-bold">Motor Volume:</span> {{ carMotorVolume }}
+          <br />
+          <span class="text-bold">Numer of Doors:</span> {{ carDoors }}
+          <br />
+          <span class="text-bold">Type of Fule:</span> {{ carFuleType }}
+          <br />
+          <span class="text-bold">Fule Usage:</span> {{ carFuleUsage }}
+        </p>
+        <a href="{{ carLink }}" target="_blank">LINK</a>
+      </div>
+
+      <div class="article">
+        <h1>Newest Phone: {{ phoneModel }}</h1>
+
+        <p>
+          <span class="text-bold">Manufacturer:</span> {{ phoneManufacturer }}
+          <br>
+          <span class="text-bold">Model:</span> {{ phoneModel }}
+          <br>
+          <span class="text-bold">Color:</span> {{ phoneColor }}
+          <br>
+          <span class="text-bold">Screen:</span> {{ phoneScreen }} Hz<sup>2</sup>
+          <br>
+          <span class="text-bold">RAM:</span> {{ phoneRAM }} GB
+          <br>
+          <span class="text-bold">Storage:</span> {{ phoneStorage }}
+          <br>
+          <span class="text-bold">Processor:</span> {{ phoneProcessor }}
+          <br>
+          <span class="text-bold">Cameras:</span> {{ phoneCameras }}
+          <br>
+          <span class="text-bold">Operative System:</span> {{ phoneOS }}
+          <br>
+          <span class="text-bold">Battery Capacity:</span> {{ phoneBatteryCapacity }} mAh
+          <br>
+        </p>
+        <a href="{{ phoneLink }}" target="_blank">LINK</a>
+      </div>
+      
+    </main>
+  </body>
+</html>

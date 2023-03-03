@@ -1,0 +1,92 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  padding: 1rem 2rem;
+
+  
+  background: rgb(0,212,255);
+  background: linear-gradient(135deg, rgba(0,212,255,1) 0%, rgba(128,255,255,1) 50%, rgba(252,252,252,1) 100%);
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+.article {
+  border: 1px solid black;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+
+  max-width: 40rem;
+  min-width: 13rem;
+
+  transition: 0.3s;
+}
+
+.article:hover {
+  box-shadow: 0 0 0.5rem 0.05rem rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+p {
+  letter-spacing: 0.025rem;
+}
+
+.text-bold {
+  font-weight: 600;
+  padding-right: 0.25rem;
+}
+
+a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  color: black;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+
+  width: 100%;
+  max-width: 12.5vw;
+  min-width: max-content;
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+a:hover {
+  color: rgb(0, 212, 255);
+  background-color: black;
+}
+
+/* 4K */
+@media screen and (min-width: 2560px) {
+
+  a {
+    max-width: 6.25vw;
+  }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+
+  a {
+    max-width: 25vw;
+  }
+}
+
+/* MOBILNI */
+@media screen and (max-width: 425px) {
+
+  a {
+    max-width: 50vw;
+  }
+}
